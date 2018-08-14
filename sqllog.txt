@@ -1,0 +1,10 @@
+INSERT INTO agents VALUES ('', 'Corinne', 'M.', 'Mullan', '(403) 555-1234', 'a@b.com', 'Intermediate Agent', '2')
+SUCCESS 
+INSERT INTO agents VALUES ('', 'Corinne', 'M.', 'Mullan', '(403) 555-1234', 'a@b.com', 'Junior Agent', '2')
+FAIL 
+INSERT INTO agents VALUES ('', 'Corinne', 'M.', 'Mullan', '(403) 555-1234', 'a@b.com', 'Junior Agent', '2')
+FAIL 
+INSERT INTO agents VALUES ('', 'Corinne', 'M.', 'Mullan', '(403) 555-1234', 'a@b.com', 'Junior Agent', '2')
+SUCCESS 
+INSERT INTO agents VALUES ('', 'Jane', '', 'Bellingham', '(403) 555-9999', 'jane@gmail.com', 'Senior Agent', '1')
+SUCCESS 

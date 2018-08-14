@@ -1,0 +1,264 @@
+/*
+CPRG 210 Exercise 12
+CSS file for styling Travel Experts web pages
+Corinne Mullan
+May 28, 2018 
+*/
+
+body {
+	background-image: url("images/backgroundmap.png"); 
+	/*  Use a font from fonts.google.com */
+	font-family: 'Kavivanar', cursive;
+	color: black;
+	margin: 0;
+}
+header {
+	background-color: #ffff80;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	margin-top: 1.5%;
+	margin-bottom: 0%;
+}
+hr { 
+	border: 2px solid blue;
+} 
+sup {
+	vertical-align: super;
+}
+sub {
+	vertical-align: sub;
+}
+h1 {
+	font-size: 200%;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center-left;
+}
+h2 {
+	font-size: 140%;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+}
+#logo {
+	border: 2px solid black;
+	margin: 20px;
+	vertical-align: middle;
+	width: 200px;
+	height: 135px;
+} 
+nav {
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	margin-bottom: 1.5%;
+	margin-top: 0;
+	position: relative;
+}
+.navmenu {   
+    list-style-type: none;  
+    margin: 0;  
+    padding: 0;  
+    height: 30px;  
+	background-color: #ffff80;
+    font-family: Arial;  
+	font-size: 18;
+}  
+.navmenu li {  
+    height: 30px;  
+    line-height: 30px;  
+}  
+.navmenu li a {   
+    padding: 0 20px;  
+    color: black;  
+    text-decoration: none;  
+}  
+.navmenu.icon {   
+    padding: 0 20px;  
+    color: black;  
+    text-decoration: none; 
+	position: absolute;
+	top: -30px;;
+	right: 0;
+}  
+.navmenu li a:hover {  
+    background-color: #ff9900;  
+    text-decoration: none;  
+}
+div {
+	text-align: center;
+	margin: 1.5%;
+}
+table {
+    border-collapse: collapse;
+	font-family: arial;
+	margin-left: auto;
+	margin-right: auto;
+}
+table, th, td {
+    border: 1px solid black;
+	padding: 0px;
+	vertical-align: middle;
+	text-align: center;
+} 
+th {
+	font-size: 16;
+	font-weight: bold;
+	padding: 10px;
+}
+.tbl_img {
+	width: 260px;
+	height: 190px;
+}
+#linkscell {
+	padding: 10px;
+}
+ul {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+ul ul {
+	padding-left: 20px;
+}
+.list_nobullets {
+	list-style: none;
+}
+iframe {
+	border: 1px solid black;
+}
+#formdiv {
+	position: relative;
+    background-color: white;
+	text-align: left;
+	width: 400px;
+	margin: 1.5%;
+	padding: 10px;
+	border: 1px solid grey;
+} 
+#hint{
+	visibility: hidden;
+	position: absolute;
+	left: 400px;
+	top:  0px;
+	width: 200px;
+	border: 1px solid grey;
+	background-color: white;
+	padding:  10px;
+	color: blue;
+	font-style: italic;
+	z-index: 1;
+}
+label {
+	margin-right: 20px;
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+    background-color: #ebf5fb;
+    color: black;
+}
+input[type="submit"] {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px;
+}
+input[type="reset"] {
+	font-size: 16px;
+	font-weight: normal;
+	padding: 10px;
+	margin-left: 80px;
+}
+select {
+	background-color: #ebf5fb;
+    color: black;
+}
+.success {
+	color: blue;
+}
+.fail {
+	color: red;
+}
+.hline{
+	clear: both;
+	margin: 1.5%;
+}
+footer {
+	clear: both;
+	background-color: #d0d0d0;
+	padding: 0.5%;
+	margin: 1.5%;
+}
+
+/* Add some responsive web design considerations.  Shrink the logo size if the screen width is
+   below 768 pixels.  Also prevent images from scaling up beyond their maximum size.  
+   Move the aside from the right to the left when the screen width is less than 768 pixels.  
+   Change the menu from a horizontal list starting on the left to a single menu icon on the
+   right when the screen width is below 768 pixels. */
+img {
+	max-width: 100%;
+    height: auto;
+}
+@media(max-width:767px){
+	#logo {
+		width: 100px;
+		height: 68px;
+	}
+	section {
+		float: left;
+		width: 96%;
+		margin: 1.5%
+	}
+	aside {
+		float: left;
+		width: 96%;
+		margin: 1.5%;
+	}
+	.navmenu li {
+		float: none;
+	}
+	.navmenu li a {
+		display: none;
+	}
+	.navmenu.icon {
+		display: block;
+	}
+	#menu {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.navmenu.responsive li a {
+		float: none;
+		display: block;
+		text-align: right;
+		background-color: #ffff80;
+		position: absolute;
+		right: 0;
+		width: 70px;
+		z-index: 1;
+	}
+	.navmenu.responsive li a:hover {  
+		background-color: #ff9900;  
+		text-decoration: none;  
+	} 
+}
+@media(min-width:768px){
+	section {
+		float: left;
+		width: 47%;
+		margin: 1.5%
+	}
+	aside {
+		float: right;
+		width: 47%;
+		margin: 1.5%;
+	}
+	.navmenu li {
+		float: left;
+	}
+	.navmenu li a {
+		display: block;
+	}
+	.navmenu.icon {
+		display: none;
+	}
+}
